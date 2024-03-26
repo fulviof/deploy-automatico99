@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
   const ip = getIpAddress();
 
   // Obter a hora atual do servidor
-  const horaAtual = moment().format('YYYY-MM-DD HH:mm:ss');
+  const horaAtual = moment().format('YYYY-MM-DD');
 
   // Renderizar a página ejs com as informações
   res.render('index', { ip, horaAtual });
